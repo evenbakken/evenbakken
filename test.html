@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>evenbakken</title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<a class="logolink" href="index.html">
+	<div class="nav">
+		<!--<a class="logolink" href="index.html">-->
+			<img href="index.html" class="logo" src="eblogo.png">
+	<!--</a>-->
+		<h3 class="navn">EVEN BAKKEN</h3>
+	</div>
+	</a>
+	<div class="all">
+			<div class="lefts">
+				<a href="about.html" class="aboutlink"><div class="homeleft1">
+					<h3 class="lefttext">ABOUT</h3>
+				</div></a>
+				<a href="works.html" class="workslink"><div class="homeleft1">
+					<h3 class="lefttext">WORKS</h3>
+				</div></a>
+				<a href="contact.html" class="contactlink"><div class="homeleft1">
+					<h3 class="lefttext">CONTACT</h3>
+				</div></a>
+				<div class="homeleft2"></div>
+				<div class="homeleft2"></div>
+				<div class="homeleft2"></div>
+				<div class="homeleft2"></div>
+				<div class="homeleft2"></div>
+			</div>
+		<div class="righties1">
+			<a href="sq1.html"><div class='container'>
+				<div class="right1"><img class="mflogo" src="mflogo.png"></div>
+			</div></a>
+				<div class="right2"></div>	
+			<div class="right3"></div>
+			<div class="right4"></div>
+		</div>
+		<div class="righties2">
+			<a class="container5" href="sq5.html">
+				<div class="right5"><img class="mohlogo" src="mohlogohvit.png"></div>
+				</a>
+			<div class="right2"></div>
+			<div class="right3"></div>
+			<div class="right4"></div>
+		</div>
+		<div class="righties3">
+			<div class="right6"></div>
+			<div class="right2"></div>
+			<div class="right3"></div>
+			<div class="right4"></div>
+		</div>
+	</div>
+
+		<script type="text/javascript">
+
+	const right1 = document.querySelector(".right1");
+	const container = document.querySelector(".container");
+	const right5 = document.querySelector(".right5");
+	const container5 = document.querySelector(".container5");
+
+	container.addEventListener('mousemove', (e) => {
+		//console.log(e.pageX, e.pageY);
+		//let xAxis = (1450 - e.pageX) / 8;
+		//let yAxis = (210 - e.pageY) / 8;
+		let xAxis = (window.innerWidth / 1.45  - e.pageX) / 4;
+		let yAxis = (window.innerHeight / 5 - e.pageY) / 4;
+		right1.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+		//right1.style.transform = "rotate(7deg)";
+	});
+
+	container.addEventListener('mouseenter', e => {
+		right1.style.transition = 'none';
+	});
+
+	container.addEventListener('mouseleave', e => {
+		right1.style.transition = 'all 0.5s ease';
+		right1.style.transform = `rotateY(0deg) rotateX(0deg)`;
+	});
+
+	// MOH 
+
+	container5.addEventListener('mousemove', (e) => {
+		let xAxis = (window.innerWidth / 1.23  - e.pageX) / 10;
+		let yAxis = (window.innerHeight / 2.2 - e.pageY) / 10;
+		right5.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+	});
+
+	container5.addEventListener('mouseenter', e => {
+		right5.style.transition = 'none';
+	});
+
+	container5.addEventListener('mouseleave', e => {
+		right5.style.transition = 'all 0.5s ease';
+		right5.style.transform = `rotateY(0deg) rotateX(0deg)`;
+	});
+
+
+	</script>
+
+</body>
+</html>
