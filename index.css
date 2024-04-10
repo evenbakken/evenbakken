@@ -139,7 +139,7 @@ a {
 }
 
 .right1 {
-	background-color: #e08b65;
+	background-color: #656de0;
 	width: 100%;
 	height: 0;
 	padding-bottom: 100%;
@@ -161,6 +161,16 @@ a {
 }
 
 .right3 {
+	background-color: #e08b65;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	margin: 0px;
+	float: right;
+	margin-bottom: 100%;
+}
+
+.right7 {
 	background-color: #e08b65;
 	width: 100%;
 	height: 0;
@@ -208,6 +218,11 @@ a {
 }
 
 .mohlogo {
+	width: 70%;
+	margin-top: 30%;
+}
+
+.svlogo {
 	width: 70%;
 	margin-top: 30%;
 }

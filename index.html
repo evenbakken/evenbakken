@@ -39,7 +39,13 @@
 					</div>
 				</div>
 			</a>
-			<div class="right2"></div>
+			<a href="sq7.html">
+				<div class='container7'>
+					<div class="right7">
+						<img class="svlogo" src="SchiavenzaLogo.png">
+					</div>
+				</div>
+			</a>
 			<div class="right3"></div>
 			<div class="right4"></div>
 		</div>
@@ -77,6 +83,8 @@
 	const container5 = document.querySelector(".container5");
 	const right6 = document.querySelector(".right6");
 	const container3 = document.querySelector(".container3");
+	const right7 = document.querySelector(".right7");
+	const container7 = document.querySelector(".container7");
 
 	container.addEventListener('mousemove', (e) => {
 		//console.log(e.pageX, e.pageY);
@@ -129,6 +137,23 @@
 	container3.addEventListener('mouseleave', e => {
 		right6.style.transition = 'all 0.5s ease';
 		right6.style.transform = `rotateY(0deg) rotateX(0deg)`;
+	});
+
+	// SQ 7 CONTAINER 7 FAGDAG
+
+	container7.addEventListener('mousemove', (e) => {
+		let xAxis = (window.innerWidth / 1.45  - e.pageX) / 4;
+		let yAxis = (window.innerHeight / 1.45 - e.pageY) / 4;
+		right7.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+	});
+
+	container7.addEventListener('mouseenter', e => {
+		right7.style.transition = 'none';
+	});
+
+	container7.addEventListener('mouseleave', e => {
+		right7.style.transition = 'all 0.5s ease';
+		right7.style.transform = `rotateY(0deg) rotateX(0deg)`;
 	});
 
 
