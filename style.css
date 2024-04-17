@@ -263,7 +263,7 @@ a {
 			perspective: 20vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
 	.nav {
 		height: 10vw;
 		background-color: #000000;
