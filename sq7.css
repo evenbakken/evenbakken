@@ -201,3 +201,88 @@ a {
 	width: 75%;
 	margin: 0;
 }
+
+@media (max-width: 800px) {
+	.nav {
+		height: 10vw;
+		background-color: #000000;
+		display: flex;
+		align-items: center;
+		color: white;
+		font-family: Gopher hairline, sans-serif;
+	}
+
+	.logo {
+		margin-left: 3.75%;
+		width: 12%;
+		height: auto;
+		animation: transitionIn 1s, ease-in-out;
+	}
+
+	.navn {
+		margin-left: 6%;
+		font-size: 2vw;
+		animation: transitionIn 2s, ease-in-out;
+	}
+
+	.overskrift {
+		color: white;
+		font-family: Gopher;
+		margin: 0px;
+		padding-top: 30px;
+		font-size: 32px;
+		animation: transitionDown 1s, ease-in-out;
+	}
+	
+	.grid {
+		background-color: lightcyan;
+		width: 95%;
+		height: 2000px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	.phøyre1 {
+		color: white;
+		font-family: Gopher;
+		font-size: 3vw;
+		text-align: left;
+		margin: 0;
+		margin-left: 20px;
+		padding-top: 12%;
+		animation: transitionDown 1s, ease-in-out;
+	}
+	
+	.phøyre15 {
+		color: white;
+		font-family: Gopher;
+		font-size: 3vw;
+		text-align: left;
+		margin: 0;
+		margin-left: 20px;
+		padding-top: 30%;
+		animation: transitionDown 1s, ease-in-out;
+	}
+	
+	.phøyre2 {
+		color: white;
+		font-family: Gopher;
+		font-size: 3vw;
+		text-align: left;
+		margin: 0;
+		margin-left: 20px;
+		padding-top: 35%;
+		animation: transitionDown 1s, ease-in-out;
+	}
+	
+	.pvenstre1 {
+		color: white;
+		font-family: Gopher;
+		font-size: 3vw;
+		text-align: right;
+		margin: 0;
+		margin-right: 20px;
+		padding-top: 28%;
+		animation: transitionDown 1s, ease-in-out;
+	}
+}
